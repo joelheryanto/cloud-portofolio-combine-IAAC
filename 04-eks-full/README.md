@@ -4,21 +4,7 @@
 Full production-grade deployment pipeline using Terraform to provision EKS cluster and deploy containerized app accessible from the internet.
 
 ## Architecture
-|Terraform|
-|↓|
-|AWS VPC + Subnets + IGW|
-|↓|
-|EKS Cluster (joel-eks)|
-|↓|
-|Node Group (t3.small)|
-|↓|
-|Docker Image (ECR)|
-|↓|
-|Kubernetes Deployment|
-|↓|
-|LoadBalancer Service|
-|↓|
-| Live on Internet!|
+Terraform -> AWS VPC + Subnets + IGW -> EKS Cluster (joel-eks) -> Node Group (t3.small) -> Docker Image (ECR) -> Kubernetes Deployment -> LoadBalancer Service -> Live on Internet!
 
 ## Files
 | File | Description |
