@@ -32,7 +32,8 @@ kubectl get service
 # Destroy everything
 kubectl delete service simple-app-service
 terraform destroy
-What I Learned
+
+# What I Learned
 EKS cluster provisioning with Terraform
 Connecting kubectl to AWS EKS
 LoadBalancer service for public access
