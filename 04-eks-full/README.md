@@ -10,7 +10,7 @@ Full production-grade deployment pipeline using Terraform to provision EKS clust
 |↓|
 |EKS Cluster (joel-eks)|
 |↓|
-|Node Group (t3.small)
+|Node Group (t3.small)|
 |↓|
 |Docker Image (ECR)|
 |↓|
