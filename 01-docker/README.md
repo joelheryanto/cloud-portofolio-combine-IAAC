@@ -25,6 +25,6 @@ docker run -p 5000:5000 simple-app
 docker push <ecr-url>/simple-app:latest
 
 # What I Learned
-Containerization concepts
-Dockerfile best practices
-AWS ECR for image registry
+Containerization concepts  
+Dockerfile best practices  
+AWS ECR for image registry  
