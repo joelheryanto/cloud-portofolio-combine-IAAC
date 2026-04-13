@@ -4,15 +4,7 @@
 Production-grade cloud infrastructure projects built with AWS, Docker, Kubernetes, and Terraform.
 
 ## 🏗️ Architecture
-Internet
-↓
-Application Load Balancer
-↓
-EKS Cluster (Kubernetes)
-↓
-Docker Containers (ECR)
-↓
-RDS MySQL
+Internet -> Application Load Balancer -> EKS Cluster (Kubernetes) -> Docker Containers (ECR) -> RDS MySQL
 
 ## 📁 Projects
 
