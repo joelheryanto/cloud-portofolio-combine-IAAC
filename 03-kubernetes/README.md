@@ -4,13 +4,8 @@
 Deployed containerized Flask app to Kubernetes with self-healing demonstration.
 
 ## Architecture
-Docker Image
-↓
-Kubernetes Deployment (2 replicas)
-↓
-Kubernetes Service (NodePort)
-↓
-App accessible via localhost
+Docker Image -> Kubernetes Deployment (2 replicas) -> Kubernetes Service (NodePort) -> App accessible via localhost
+
 ## Files
 | File | Description |
 |---|---|
@@ -34,7 +29,8 @@ minikube service simple-app-service
 
 # Delete pod (self-healing demo)
 kubectl delete pod <pod-name>
-What I Learned
+
+# What I Learned
 Kubernetes core concepts (Pod, Deployment, Service)
 Self-healing capabilities
 Local K8s with Minikube
