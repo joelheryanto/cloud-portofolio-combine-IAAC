@@ -26,7 +26,7 @@ terraform apply
 terraform destroy
 
 # What I Learned
-Infrastructure as Code concepts
-Terraform providers and resources
-AWS networking (VPC, Subnets, IGW)
-State management with tfstate
+Infrastructure as Code concepts  
+Terraform providers and resources  
+AWS networking (VPC, Subnets, IGW)  
+State management with tfstate  
