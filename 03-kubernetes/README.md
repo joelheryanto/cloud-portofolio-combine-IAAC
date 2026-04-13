@@ -15,7 +15,7 @@ Docker Image -> Kubernetes Deployment (2 replicas) -> Kubernetes Service (NodePo
 ## Key Commands
 `bash
 # Deploy app
-kubectl apply -f deployment.yaml
+kubectl apply -f deployment.yaml  
 kubectl apply -f service.yaml
 
 # Check pods
@@ -31,7 +31,7 @@ minikube service simple-app-service
 kubectl delete pod <pod-name>
 
 # What I Learned
-Kubernetes core concepts (Pod, Deployment, Service)
-Self-healing capabilities
-Local K8s with Minikube
-YAML configuration
+Kubernetes core concepts (Pod, Deployment, Service)  
+Self-healing capabilities  
+Local K8s with Minikube  
+YAML configuration  
