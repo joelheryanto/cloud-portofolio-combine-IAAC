@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello from Docker!"
+    return "Hello from Docker! CI/CD is now working!"
 
 @app.route('/health')
 def health():
