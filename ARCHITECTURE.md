@@ -1,48 +1,27 @@
 # Architecture Diagram
 
 ## Full CI/CD Pipeline
-Developer Laptop
-|
-| git push
-↓
-GitHub Repository
-|
-| trigger
-↓
-GitHub Actions (CI/CD)
-|
-|── Build Docker Image
-|── Push to ECR
-|── Deploy to EKS
-↓
-AWS Cloud (ap-southeast-1)
-|
-↓
-┌─────────────────────────────────┐
-│           AWS VPC               │
-│  ┌─────────┐    ┌─────────┐    │
-│  │ Subnet A│    │ Subnet B│    │
-│  └────┬────┘    └────┬────┘    │
-│       │              │         │
-│  ┌────┴──────────────┴────┐    │
-│  │     EKS Cluster        │    │
-│  │  ┌─────────────────┐   │    │
-│  │  │   Node Group    │   │    │
-│  │  │  ┌───────────┐  │   │    │
-│  │  │  │  Pod 1    │  │   │    │
-│  │  │  │ simple-app│  │   │    │
-│  │  │  └───────────┘  │   │    │
-│  │  └─────────────────┘   │    │
-│  └────────────────────────┘    │
-│              │                  │
-│  ┌───────────┴──────────┐      │
-│  │   Load Balancer      │      │
-│  └───────────┬──────────┘      │
-└──────────────┼─────────────────┘
-│
-↓
-🌐 Internet
-(Public URL)
+```mermaid
+flowchart TD
+    A[👨‍💻 Developer Laptop] -->|git push| B[GitHub Repository]
+    B -->|trigger| C[GitHub Actions]
+    C -->|build| D[Docker Image]
+    D -->|push| E[AWS ECR]
+    E -->|deploy| F[AWS EKS Cluster]
+    
+    subgraph AWS Cloud ap-southeast-1
+        subgraph VPC
+            subgraph EKS Cluster
+                F --> G[Node Group]
+                G --> H[Pod: simple-app]
+            end
+        end
+        E
+        I[Load Balancer] --> H
+    end
+    
+    I -->|public url| J[🌐 Internet]
+```
 
 ## AWS Services Used
 
