@@ -1,5 +1,27 @@
 # 🚀 Cloud Engineering Portfolio - Joel
 
+![Deploy to EKS](https://github.com/joelheryanto/cloud-portofolio-combine-IAAC/actions/workflows/deploy.yml/badge.svg)
+
+
+
+
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws)
+
+
+
+
+![Docker](https://img.shields.io/badge/Docker-Container-blue?logo=docker)
+
+
+
+
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-blue?logo=kubernetes)
+
+
+
+
+![Terraform](https://img.shields.io/badge/Terraform-IaC-purple?logo=terraform)
+
 ## 📋 Overview
 Production-grade cloud infrastructure projects built with AWS, Docker, Kubernetes, and Terraform.
 
